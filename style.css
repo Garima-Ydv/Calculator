@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+/* Calculator box */
+.calculator {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 25px;
+    padding-top: 5px;
+    box-shadow: 0px 4px 25px rgba(113, 115, 119, 0.5);
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.calculator:hover {
+    box-shadow: 0px 4px 35px rgba(255, 255, 255, 0.1);
+    transform: scale(1.01);
+}
+
+/* Input box */
+input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: right;
+    padding: 23px;
+    margin: 27px;
+    width: calc(100% - 54px);
+    border-radius: 8px;
+    box-shadow: inset 0px 3px 10px rgba(255, 255, 255, 0.05),
+                inset 0px -3px 10px rgba(0, 0, 0, 0.3);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Buttons area */
+.buttons {
+    text-align: center;
+}
+
+/* All buttons */
+button {
+    width: 4.2rem;
+    height: 4.2rem;
+    border: none;
+    margin: 12px;
+    font-size: 23px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1f1f1f, #2e3541);
+    color: white;
+    font-weight: bold;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.05),
+                5px 5px 15px rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Button hover effects */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
+    background: linear-gradient(145deg, #2c313a, #1f1f1f);
+}
+
+/* Active effect */
+button:active {
+    transform: scale(0.96);
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Operator buttons */
+.sign {
+    color: #9fff7c;
+    background: linear-gradient(145deg, #232b33, #1a2028);
+    box-shadow: 0px 0px 8px rgba(173, 255, 47, 0.2);
+}
+
+.sign:hover {
+    box-shadow: 0px 0px 15px rgba(173, 255, 47, 0.4);
+}
+
+/* Equal button */
+.eqlbtn {
+    background: linear-gradient(145deg, #fb7c14, #ff9f3e);
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px rgba(251, 124, 20, 0.5);
+}
+
+.eqlbtn:hover {
+    background: linear-gradient(145deg, #ff9f3e, #fb7c14);
+    box-shadow: 0px 0px 25px rgba(251, 124, 20, 0.8);
+}
